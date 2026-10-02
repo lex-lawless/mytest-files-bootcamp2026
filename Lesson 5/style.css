@@ -1,0 +1,210 @@
+:root {
+  --main-color: darkred;
+  --secondary-color: #333;
+  --background-color: rgb(249, 247, 247);
+  --menu-item-background: white;
+  --menu-item-border: black;
+  --menu-item-shadow: #ccc;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(249, 247, 247);
+  padding: 40px;
+  color: black;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: darkblue;
+  border: 1px solid black;
+}
+
+/* pixels - px, relative - %, em - relative to font size, rem - relative to root font size */
+
+h1 {
+  color: darkred;
+  font-size: 32px;
+  text-align: left;
+}
+
+#header-title {
+  color: black;
+  font-size: 32px;
+  text-align: left;
+}
+
+#header-subtitle {
+  font-family: calibri, sans-serif;
+
+  color: darkblue;
+  font-style: italic;
+  font-size: 20px;
+  text-align: left;
+  /*  
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+   */
+  padding: 30px 20px 35px 20px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #c9c9c9;
+  margin-bottom: 40px;
+  background-color: rgb(187, 225, 241);
+}
+
+#tile-heading {
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.car-make-model {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.car-price {
+  font-size: 18px;
+  color: darkred;
+  margin-bottom: 10px;
+}
+
+.main-listing {
+  /*position: static;  /* default value. Not necessary to specify */
+  position: relative; /* relative to the normal flow of the document.  Can be moved with top, bottom, left, right */
+  top: 20px;
+  left: 20px;
+
+  max-width: auto;
+  position: relative;
+  /* background-color: white; */
+  /* border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 10px 2px 3px #ddd; */
+
+  /* flexbox, grid, float, positioning  */
+
+  /* Flexbox Example
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 10px; */
+  /* gap: 0px;
+  justify-content: space-between 0px; */
+
+  /* Grid Example */
+  display: grid;
+  gap: 20px;
+  /* grid-template-columns: repeat(3, 1fr); 1fr 1 Franction of the screen. equivalent of the following*/
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.car-image {
+  width: 400px;
+  height: 300px;
+}
+
+.listing-item {
+  position: relative;
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 1px 1px 5px lightgrey;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.listing-text {
+  padding: 10px;
+  margin-left: 10px;
+  max-width: 400px;
+}
+nav {
+  display: flex;
+  gap: 24px;
+  color: black;
+  align-items: center;
+  /*background-color: white; */
+}
+
+.navbar {
+  font-size: 18px;
+  display: fixed;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: black;
+  background-color: rgb(211, 205, 205);
+  padding: 0px 20px 0px 20px;
+  /* box-shadow: 1px 1px 5px lightgrey; */
+  border: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  color: black;
+  align-items: centre;
+  background-color: rgb(211, 205, 205);
+  padding: 0px 20px 0px 0px;
+}
+
+/* Only used if the h1 is inside the nav element.  If the h1 is outside the nav element, then this will not apply.  This is called a descendant selector.  It selects the h1 that is a descendant of the nav element.  The h1 can be a child or a grandchild or a great-grandchild of the nav element.  It will select any h1 that is inside the nav element. */
+/* nav h1 {
+  color: black;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold; */
+/* } */
+
+/* Layout - Float Example */
+
+.header-image {
+  width: 600px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* float: left; float the image to the left */
+  margin-right: 10px;
+}
+
+.badge {
+  position: absolute; /* relative to the nearest positioned ancestor (listing-item) */
+  background-color: red;
+  top: 5px;
+  left: 5px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.badge2 {
+  position: absolute;
+  background-color: yellow;
+  top: 5px;
+  left: 5px;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+}
