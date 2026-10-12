@@ -136,7 +136,7 @@ h1 {
 }
 nav {
   display: flex;
-  gap: 24px;
+  gap: 14px;
   color: black;
   align-items: center;
   /*background-color: white; */
@@ -144,9 +144,11 @@ nav {
 
 .navbar {
   font-size: 18px;
+  height: 40px;
   display: fixed;
   justify-content: space-between;
-  align-items: flex-end;
+  /* align-items: flex-end */
+  align-items: center;
   color: black;
   background-color: rgb(211, 205, 205);
   padding: 0px 20px 0px 20px;
@@ -157,6 +159,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .nav-links {
